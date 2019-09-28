@@ -1,4 +1,4 @@
-package com.entity;
+package com.bo.entity;
 
 /**
  * @author wl_sun
@@ -7,20 +7,20 @@ package com.entity;
  * @Date 2019/9/28
  * @Version 1.0
  **/
-public class Student {
+public class Book {
     private Integer id;
     private String name;
-    private String gender;
-    private Integer age;
+    private String cover;
+    private String author;
 
-    public Student(Integer id, String name, String gender, Integer age) {
+    public Book(Integer id, String name, String cover, String author) {
         this.id = id;
         this.name = name;
-        this.gender = gender;
-        this.age = age;
+        this.cover = cover;
+        this.author = author;
     }
 
-    public Student() {
+    public Book() {
     }
 
     public Integer getId() {
@@ -39,28 +39,29 @@ public class Student {
         this.name = name;
     }
 
-    public String getGender() {
-        return gender;
+    public String getCover() {
+        return cover;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setCover(String cover) {
+        this.cover = cover;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setAuthor(String author) {
+        this.author = author;
     }
+
+
     @Override
     public String toString() {
-        return "Student{" +
+        return "Book{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
+                ", cover='" + cover + '\'' +
                 '}';
     }
 }
